@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C A R T</title>
+    <style>
+        body {
+            background-color: rgb(250, 224, 199);
+        }
+        .cart-container {
+            width: 60%;
+            margin: auto;
+            background-color: white;
+            border-radius: 20px;
+            margin-top: 70px;
+            margin-bottom: 50px;
+            padding: 50px;
+        }
+        h3 {
+            font-family: 'Jost',sans-serif;
+        }
+        h4,h5 {
+            text-align: right;
+            font-family: sans-serif;
+        }
+        p {
+            font-family: sans-serif;
+        }
+        table {
+            border: none;
+            margin: auto;
+            font-family: sans-serif;
+        }
+        td,th {
+            border: none;
+            text-align: left;
+            padding: 10px;
+        }
+        a {
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        .checkout {
+            font-family: sans-serif;
+            padding: 10px;
+            border: none;
+            background-color: rgb(250, 224, 199);
+        }
+        .update {
+            font-family: sans-serif;
+            padding: 10px;
+            border: none;
+            background-color: rgb(250, 224, 199);
+        }
+    </style>
+</head>
+<body>
+
+<div class="cart-container">
+    <a href="shop.php">Back</a>
+    <h3>SHOPPING CART</h3>
+    
+    
+<table>
+    <tr>
+  <th>Product name</th>
+  <th>Product Id</th>
+  <th>Quantity</th>
+  <th>Product image</th>
+  <th>Price</th>
+</tr>
+<tr>
+  
+<td>White Doc Martens</td>
+
+<td>P.1D 3456</td>
+<td><input type="number" value="2" name="quantity"></td>
+<td><img src="images/IMG-61e4263a77dbd4.20036938.jpg" width="100px" height="100px"></td>
+<td>TZS 50,000 <br><input class="update" type="submit" value="update" name="submit"></td>
+
+</tr>
+<tr>
+  
+    <td>Solid Brown Croptop</td>
+    
+    <td>P.1D 4766</td>
+    <td><input type="number" value="2" name="quantity"></td>
+    <td><img src="images/IMG-61e413f5e86df6.64999919.jpg" width="100px" height="100px"></td>
+    <td>TZS 10,000 <br><input class="update" type="submit" value="update" name="submit"></td>
+    
+    </tr>
+
+
+
+
+</table>
+<h4>Total</h4>
+<h5>TZS 60,000</h5>
+<p>No of item(s) in the cart : 2</p>
+<a href="checkout.php"><input class="checkout" type="submit" value="Checkout"></a>
+</div>
+ 
+    
+</body>
+</html>
